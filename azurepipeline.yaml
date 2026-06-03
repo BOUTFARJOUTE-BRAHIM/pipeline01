@@ -20,7 +20,7 @@ stages:
            
    - job:  build_babaha
      pool:
-      vmImage: 'widows-latest'
+      vmImage: 'windows-2022'
      dependsOn: buildi_babaha
      steps:
      - script: |
