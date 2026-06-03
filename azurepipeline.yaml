@@ -10,11 +10,13 @@ stages:
    - job: buildi_babaha
      steps:
      - script: |
+              cd ~
               ls 
               touch haha
-              
+              ls               
    - job:  build_babaha
      dependsOn: buildi_babaha
      steps:
      - script: |
+              cd ~
               ls 
