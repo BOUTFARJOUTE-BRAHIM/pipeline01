@@ -11,7 +11,6 @@ stages:
      steps:
      - script: |
               ls -l /
-              cd /
               touch haha
    - job:  build_babaha
      steps:
