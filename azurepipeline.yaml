@@ -13,6 +13,7 @@ stages:
               ls -l /
               touch haha
    - job:  build_babaha
+     dependsOn: buildi_babaha
      steps:
      - script: |
               cd /
