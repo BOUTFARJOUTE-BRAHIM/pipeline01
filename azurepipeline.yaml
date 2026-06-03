@@ -4,16 +4,17 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
--  stage: building haha
-    jobs:
-    -  job: buildi babaha
-        steps:
-        -  script: |
+- stage: building_haha
+  jobs:
+
+   - job: buildi_babaha
+     steps:
+     - script: |
               ls -l /
               cd /
               touch haha
-    -  job:  build babaha
-       steps:
-        -  script: |
+   - job:  build_babaha
+     steps:
+     - script: |
               cd /
               ls 
