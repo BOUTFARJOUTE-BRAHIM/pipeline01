@@ -1,13 +1,14 @@
 trigger: none
 
-pool:
+#pool:
  # vmImage: 'ubuntu-latest'
-   container: nginx:latest
 
 stages:
 - stage: building_haha
   jobs:
    - job: buildi_babaha
+     container: ubuntu:22.04
+
      #pool:
       #vmImage: 'ubuntu-latest'
      steps:
