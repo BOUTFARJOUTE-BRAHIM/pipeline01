@@ -16,7 +16,7 @@ stages:
      steps:
      - script: |
               mkdir ficher01
-              echo "hello hi hello hi" > ficher01
+              echo "hello hi hell" > ficher01/message.txt
               $(app)
               cd ~
               ls 
@@ -34,7 +34,8 @@ stages:
        artifact: R
 
      - script: |
-              cat ficher01
+              cd ficher01
+              cat message.txt
               cd ~
               ls 
               echo "HOSTNAME=$(hostname)"
