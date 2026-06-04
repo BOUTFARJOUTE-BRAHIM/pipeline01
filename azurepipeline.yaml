@@ -23,16 +23,22 @@ stages:
               touch haha
               ls    
               echo "HOSTNAME=$(hostname)"
-           
+     - publish: ficher01
+       artifact: R    
    - job:  build_babaha
     # pool:
      # vmImage: 'windows-2022'
      dependsOn: buildi_babaha
      steps:
+     - download: ficher01
+       artifact: R
+
      - script: |
+              cat ficher01
               cd ~
               ls 
               echo "HOSTNAME=$(hostname)"
+     
 
 
 
