@@ -35,6 +35,7 @@ stages:
 
      - script: |
               cd $(Pipeline.Workspace)
+              cd ficher01
               cat message.txt
               cd ~
               ls 
