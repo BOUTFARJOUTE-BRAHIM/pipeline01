@@ -2,7 +2,7 @@ trigger: none
 
 pool:
  # vmImage: 'ubuntu-latest'
-   container: node:20
+   container: nginx:latest
 
 stages:
 - stage: building_haha
