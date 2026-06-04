@@ -14,7 +14,7 @@ stages:
       #vmImage: 'ubuntu-latest'
      steps:
      - script: |
-              echo  $(app)
+              $(app)
               cd ~
               ls 
               touch haha
