@@ -1,17 +1,15 @@
 trigger: none
 
-#pool:
+pool:
  # vmImage: 'ubuntu-latest'
-
-#container: node:20 test
+   container: node:20
 
 stages:
 - stage: building_haha
   jobs:
-
    - job: buildi_babaha
-     pool:
-      vmImage: 'ubuntu-latest'
+     #pool:
+      #vmImage: 'ubuntu-latest'
      steps:
      - script: |
               cd ~
@@ -21,8 +19,8 @@ stages:
               echo "HOSTNAME=$(hostname)"
            
    - job:  build_babaha
-     pool:
-      vmImage: 'windows-2022'
+    # pool:
+     # vmImage: 'windows-2022'
      dependsOn: buildi_babaha
      steps:
      - script: |
