@@ -34,8 +34,7 @@ stages:
        artifact: R
 
      - script: |
-              cd $(Pipeline.Workspace)
-              cd ficher01
+              cd $(Pipeline.Workspace)/R
               cat message.txt
               cd ~
               ls 
