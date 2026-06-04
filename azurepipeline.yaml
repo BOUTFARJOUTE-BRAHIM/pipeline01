@@ -30,7 +30,7 @@ stages:
      # vmImage: 'windows-2022'
      dependsOn: buildi_babaha
      steps:
-     - download: ficher01
+     - download: current
        artifact: R
 
      - script: |
